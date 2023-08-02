@@ -1,12 +1,13 @@
 package week3.day1;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+
 
 public class Assigment {
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		ChromeDriver driver = new ChromeDriver();
 		
@@ -51,7 +52,7 @@ public class Assigment {
 		
 		// Enter firstName
 		WebElement firstName = driver.findElement(By.id("createLeadForm_firstName"));
-		firstName.sendKeys("Sadhurya");
+		firstName.sendKeys("Sadhu");
 		
 		// Enter lastName
 		WebElement lastName = driver.findElement(By.id("createLeadForm_lastName"));
@@ -59,7 +60,7 @@ public class Assigment {
 		
 		// Enter firstName(local)
 		WebElement firstNameLocal = driver.findElement(By.id("createLeadForm_firstNameLocal"));
-		firstNameLocal.sendKeys("Sadhu");
+		firstNameLocal.sendKeys("Indhu");
 		
 		// Enter departmentName
 		WebElement departmentName = driver.findElement(By.name("departmentName"));
@@ -72,7 +73,7 @@ public class Assigment {
 
 		// Enter email address
 		WebElement emailID = driver.findElement(By.id("createLeadForm_primaryEmail"));
-		emailID.sendKeys("sadhupari123@gmail.com");
+		emailID.sendKeys("indhumathi123@gmail.com");
 		Thread.sleep(2000);
 
 		// Click on the createLead button
@@ -83,7 +84,7 @@ public class Assigment {
 		driver.close();
 	}
 }
-}	
+
 
 
 
